@@ -1,0 +1,28 @@
+#routeMenu {
+  margin: 0px;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+#routeMenu a {
+  margin: 0px;
+  padding-right: 20px;
+  color: Blue;
+}
+.contentArea {
+  margin-left: 15px;
+}
+
+.App {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.title {
+  color: #666;
+}
+
+.weatherList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}

@@ -1,0 +1,40 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css);
+@import url(https://fonts.googleapi.com/css?family=Roboto:400, 300, 500, 700);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*Boostrap Overides*/
+.card {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+div {
+  padding: 0;
+}
+
+.card-header {
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  color: #fff;
+  background-color: #888;
+  border-color: #fff;
+}
+
+.card-body {
+  color: #fff;
+  padding: 0;
+  background-color: #666666;
+}
