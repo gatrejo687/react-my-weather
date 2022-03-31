@@ -6,8 +6,8 @@
 //
 // NOTE: create-react-app ignores any environment variables that
 // don't start with 'REACT_APP_'
-const API_KEY = "c810a9693acd4ea4708236406ce28978";
-//const API_KEY = process.env.REACT_APP_OWM_API_KEY;
+//const API_KEY = "c810a9693acd4ea4708236406ce28978";
+const API_KEY = process.env.REACT_APP_OWM_API_KEY;
 const baseUrl = "http://api.openweathermap.org";
 
 export const getWeatherForCity = (city) =>

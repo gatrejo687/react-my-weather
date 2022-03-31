@@ -6,11 +6,11 @@ import FontAwesome from "react-fontawesome";
 function HeaderBar() {
   return (
     <div id="headerBar">
-      <Link to="/SettingsPage">
-        <FontAwesome className="icon top" name="cog" spin="true" />
-      </Link>
       <Link to="/home">
-        <FontAwesome className="icon bottom" name="home" />
+        <FontAwesome className="icon top" name="home" />
+      </Link>
+      <Link to="/SettingsPage">
+        <FontAwesome className="icon bottom" name="cog" spin="true" />
       </Link>
       <h1>
         <h1>My Weather App - React-Redux</h1>

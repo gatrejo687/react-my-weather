@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-import { loadCity } from '../../redux/actions/locationActions';
+import { loadCity } from "../../redux/actions/locationActions";
 
-import styles from './CityWeather.module.css';
-import weatherImg from './sun_cloud.svg';
+import styles from "./CityWeather.module.css";
+import weatherImg from "./sun_cloud.svg";
 
 class CityWeather extends Component {
   componentDidMount() {
@@ -17,7 +17,7 @@ class CityWeather extends Component {
 
   render() {
     const { cityName, weatherData, failure } = this.props;
-
+    console.log(weatherData);
     return (
       <div className={styles.cardWrapper}>
         <div className="card">
@@ -81,19 +81,19 @@ CityWeather.propTypes = {
 };
 
 CityWeather.defaultProps = {
-  cityName: '',
+  cityName: "",
   loading: false,
   failure: false,
   weatherData: null,
 };
 
 function mapStateToProps(state, ownProps) {
-  return state.locations.find(cityObj => cityObj.city === ownProps.cityName);
+  return state.locations.find((cityObj) => cityObj.city === ownProps.cityName);
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    loadCityData: cityName => dispatch(loadCity(cityName)),
+    loadCityData: (cityName) => dispatch(loadCity(cityName)),
   };
 }
 
